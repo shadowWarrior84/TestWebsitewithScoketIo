@@ -1,0 +1,47 @@
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Login to iDiscuss</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="/login" method="post">
+            <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="loginEmail" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="loginEmail" name="username" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="loginPass" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="loginPass" name="password">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <div class="card mb-2 bg-danger my-2">   
+                        
+                            <a class="btn btn-block fs-4 login pt-1" href="/auth/google" role="button">
+                                <i class="fab fa-google"></i>
+                                Sign In with Google
+                            </a>
+                    </div>
+
+                    <!-- <div class="col-sm-4">
+                        <div class="card">
+                          <div class="card-body">
+                            <a class="btn btn-block" href="/auth/google" role="button">
+                              <i class="fab fa-google"></i>
+                              Sign In with Google
+                            </a>
+                          </div>
+                        </div>
+                      </div> -->
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

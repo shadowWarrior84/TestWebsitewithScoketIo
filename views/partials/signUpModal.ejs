@@ -1,0 +1,43 @@
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupLabel">Signup for an iDiscuss Account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        <form action="/signup" method="post">
+              <div class="modal-body">
+                      <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email Address</label>
+                          <input type="email" class="form-control" id="signupEmail"  name="username" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">Enter any email you like from mind no validation will be done.</div>
+                      </div>
+                      <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" minlength="4" class="form-control" id="password" name="password">
+                      </div>
+  
+                      <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                          <input type="password" minlength="4" class="form-control" id="signupcPassword" name="cpassword">
+                      </div>
+
+                      <button type="submit" class="btn btn-primary">Signup</button>
+                      <div class="card mb-2 bg-danger my-2">                           
+                        <a class="btn btn-block fs-4 login pt-1" href="/auth/google" role="button">
+                            <i class="fab fa-google"></i>
+                            Sign In with Google
+                        </a>
+                      </div>
+                      
+                  </div>
+                 
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
